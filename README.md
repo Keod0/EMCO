@@ -1,9 +1,9 @@
-📦 EMCO - Sistema de Gestão de Stocks 🛠️
+  📦 EMCO - Sistema de Gestão de Stocks 🛠️
 
 O EMCO é uma aplicação de gestão de inventário e vendas desenvolvida em Python utilizando o framework Kivy para interfaces amigáveis e o MongoDB para armazenamento de dados.
 Este projeto foi criado para facilitar o controle de produtos, vendas e estatísticas de maneira prática e eficiente, oferecendo uma experiência moderna e acessível. 🚀
 
-_Funcionalidades Principais
+#Funcionalidades Principais
 
 🔑 Autenticação Segura: Tela de login para proteger os dados.
 
