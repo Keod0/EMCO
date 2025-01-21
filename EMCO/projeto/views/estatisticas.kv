@@ -1,0 +1,23 @@
+<EstatisticasScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: dp(10)
+        spacing: dp(10)
+
+        Label:
+            text: "Estatísticas de Vendas"
+            font_size: 24
+            size_hint_y: None
+            height: dp(50)
+
+        BoxLayout:
+            id: grafico_layout
+            orientation: 'vertical'
+            size_hint: 1, 1
+
+        Button:
+            text: "Voltar"
+            size_hint_y: None
+            height: dp(50)
+            background_color: 0.8, 0.2, 0.2, 1
+            on_press: app.change_screen("home")

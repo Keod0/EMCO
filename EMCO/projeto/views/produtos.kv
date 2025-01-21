@@ -1,0 +1,52 @@
+<ProdutosScreen>:
+    BoxLayout:
+        orientation: "vertical"
+        padding: 20
+        spacing: 10
+
+        Label:
+            text: "Gestão de Produtos"
+            font_size: 28
+            size_hint_y: None
+            height: 60
+            color: 0, 0.4, 0.8, 1
+
+        GridLayout:
+            cols: 2
+            size_hint_y: None
+            height: 200
+            row_default_height: 50
+            spacing: 10
+
+            Label:
+                text: "Nome:"
+                font_size: 18
+            TextInput:
+                id: nome_produto
+                multiline: False
+
+            Label:
+                text: "Preço:"
+                font_size: 18
+            TextInput:
+                id: preco_produto
+                multiline: False
+                input_filter: "float"
+
+            Label:
+                text: "Quantidade:"
+                font_size: 18
+            TextInput:
+                id: quantidade_produto
+                multiline: False
+                input_filter: "int"
+
+        Button:
+            text: "Adicionar Produto"
+            background_color: 0, 0.6, 0.8, 1
+            on_press: app.adicionar_produto(nome_produto.text, preco_produto.text, quantidade_produto.text)
+
+        Button:
+            text: "Voltar"
+            background_color: 0.8, 0.2, 0.2, 1
+            on_press: app.change_screen("home")

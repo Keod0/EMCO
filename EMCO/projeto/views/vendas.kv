@@ -1,0 +1,58 @@
+<VendasScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: dp(10)
+        spacing: dp(10)
+
+        Label:
+            text: "Gestão de Vendas"
+            font_size: 28
+            size_hint_y: None
+            height: 60
+            color: 0, 0.4, 0.8, 1
+
+        Spinner:
+            id: produtos_spinner
+            text: "Escolha um produto"
+            size_hint: 1, None
+            height: dp(48)
+            on_text: app.atualizar_informacoes_produto(self.text)
+
+        Label:
+            id: preco_produto
+            text: "Preço Unitário: 0.00 €"
+            size_hint_y: None
+            height: dp(30)
+
+        Label:
+            id: stock_produto
+            text: "Estoque Atual: 0"
+            size_hint_y: None
+            height: dp(30)
+
+        TextInput:
+            id: quantidade_venda
+            hint_text: "Quantidade"
+            input_filter: "int"
+            multiline: False
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint_y: None
+            height: 50
+            spacing: 10
+
+            Button:
+                text: "Registar Venda"
+                background_color: 0.2, 0.6, 0.8, 1
+                on_press: app.registar_venda(produtos_spinner.text, quantidade_venda.text)
+
+            Button:
+                text: "Emitir Fatura"
+                background_color: 0, 0.4, 0.8, 1
+                on_press: app.abrir_popup_fatura(produtos_spinner.text, quantidade_venda.text)
+
+        Button:
+            text: "Voltar"
+            background_color: 0.8, 0.2, 0.2, 1
+            on_press: app.change_screen("home")

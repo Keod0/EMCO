@@ -1,0 +1,66 @@
+ScreenManager:
+    LoginScreen:
+        name: "login"
+    HomeScreen:
+        name: "home"
+    ProdutosScreen:
+        name: "produtos"
+    VendasScreen:
+        name: "vendas"
+
+<LoginScreen>:
+    BoxLayout:
+        orientation: "vertical"
+        spacing: dp(10)
+        padding: dp(20)
+
+        Label:
+            text: "Login"
+            font_size: sp(24)
+
+        TextInput:
+            id: username
+            hint_text: "Usuário"
+            multiline: False
+
+        TextInput:
+            id: password
+            hint_text: "Senha"
+            password: True
+            multiline: False
+
+        Label:
+            id: mensagem
+            text: ""
+            color: 1, 0, 0, 1  # Mensagem de erro em vermelho
+            font_size: sp(14)
+
+        Button:
+            text: "Entrar"
+            on_press: app.verificar_login(username.text, password.text)
+
+<HomeScreen>:
+    BoxLayout:
+        orientation: "vertical"
+        padding: dp(20)
+        spacing: dp(10)
+
+        Label:
+            text: "Bem-vindo ao EMCO - Gestão de Stocks"
+            font_size: sp(24)
+
+        Button:
+            text: "Gestão de Produtos"
+            on_press: app.change_screen("produtos")
+
+        Button:
+            text: "Gestão de Vendas"
+            on_press: app.change_screen("vendas")
+
+        Button:
+            text: "Estatísticas"
+            on_press: app.change_screen("estatisticas")
+
+        Button:
+            text: "Sair"
+            on_press: app.change_screen("login")
