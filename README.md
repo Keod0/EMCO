@@ -3,7 +3,7 @@
 O EMCO é uma aplicação de gestão de inventário e vendas desenvolvida em Python utilizando o framework Kivy para interfaces amigáveis e o MongoDB para armazenamento de dados.
 Este projeto foi criado para facilitar o controle de produtos, vendas e estatísticas de maneira prática e eficiente, oferecendo uma experiência moderna e acessível. 🚀
 
-#Funcionalidades Principais
+# Funcionalidades Principais
 
 🔑 Autenticação Segura: Tela de login para proteger os dados.
 
@@ -27,10 +27,10 @@ Matplotlib : Biblioteca para criação de gráficos estatísticos.
 
 ReportLab 🖋: Geração de faturas em PDF.
 
-#Planejamento Futuro
+# Planejamento Futuro
 
-🚀 Suporte para múltiplas empresas.
+Suporte para múltiplas empresas.
 
-🌐 Integração com plataformas de e-commerce.
+Integração com plataformas de e-commerce.
 
-📱 Criação de uma versão mobile nativa.
+Criação de uma versão mobile nativa.
