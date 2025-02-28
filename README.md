@@ -15,17 +15,17 @@ Este projeto foi criado para facilitar o controle de produtos, vendas e estatís
 
 🖨️ Geração de Faturas: Crie faturas personalizadas em PDF diretamente pela aplicação.
 
-#Tecnologias Utilizadas
+# Tecnologias Utilizadas
 
-Python 🐍: Linguagem principal para desenvolvimento.
+Python : Linguagem principal para desenvolvimento.
 
-Kivy 🎨: Framework para criar a interface gráfica.
+Kivy : Framework para criar a interface gráfica.
 
-MongoDB 🍃: Banco de dados NoSQL para gerenciar o armazenamento de informações.
+MongoDB : Banco de dados NoSQL para gerenciar o armazenamento de informações.
 
-Matplotlib 📈: Biblioteca para criação de gráficos estatísticos.
+Matplotlib : Biblioteca para criação de gráficos estatísticos.
 
-ReportLab 🖋️: Geração de faturas em PDF.
+ReportLab 🖋: Geração de faturas em PDF.
 
 #Planejamento Futuro
 
