@@ -27,7 +27,7 @@ Matplotlib : Biblioteca para criação de gráficos estatísticos.
 
 ReportLab 🖋: Geração de faturas em PDF.
 
-# Planejamento Futuro
+# Planeamento Futuro
 
 Suporte para múltiplas empresas.
 
